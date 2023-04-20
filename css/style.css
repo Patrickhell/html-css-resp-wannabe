@@ -127,143 +127,80 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
- /* #  desktop first */
- .container{
-    max-width: 1200px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
- }
-
- img {
-    max-width: 80%;
-}
-
-h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-h2 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-h3 {
-    margin-bottom: 1rem;
-    font-size: .8rem;
-}
-
-.lessons .col {
-    width: calc(100% / 2) ;
-  
-}
-
-
-.steps .col {
-    width: calc((100% / 3) - 2rem);
-    margin-right: 1rem;
-}
-
-.steps .col img{
-    width: 33,33%;
-    
-}
-
-
-
-
-@media screen and (max-widht:768px)  {
+ @media screen and (max-width:1160px)  {
     .container{
-        max-width: 80%;
+        max-width: 100%;
         
     }
-    h1 {
-        margin-bottom: 2rem;
-        font-size: 1rem;
-    }
     
-    h2 {
-        margin-bottom: 2rem;
-        font-size: .8rem;
-    }
-    
-    h3 {
-        margin-bottom: 2rem;
-        font-size: .6rem;
-    }
-
-    .why-us .col-left{
-        height: 40%;
-    }
-    .why-us .col-right{
-        text-align: left;
-        height:80% ;
-    }
-    
-    }
-
+}
 /* #  Mobile */
 
-@media screen and (max-widht:480px)  {
+@media screen and (max-width:480px)  {
     .container{
-        max-width: 80%;
-        
+        max-width: 90%;
+    }
+    h1{
+        margin-bottom: 1rem;
     }
 
-    h1 {
-        margin-bottom: 1rem;
-        font-size: .8rem;
+    h2{
+        font-size: 1.5rem;
+        padding-top: 2rem;
     }
-    
-    h2 {
-        margin-bottom: 1rem;
-        font-size: .5rem;  
-    }
-    
-    h3 {
-        margin-bottom: 1rem;
-        font-size: .5rem;
+    h3{
+        font-size: 1.2rem;
     }
 
+    
+   
     .row{
         flex-direction: column;
-        
     }
 
     .col {
-        padding-left:.5rem;
-        padding-right:.5rem ;
+        padding-left:2rem;
+        
+        margin-bottom: 3rem;
     }
 
     .lessons .col {
-        width: 80%;
-        height: 10%;
+        width: 100%;
+       
     }
 
     .lessons .col img {
-        width: 100%;
-        height: 70%;    
+        width: 80%;
+          
     }
     
     .steps .col {
-        width: 80%;
-        height: 10%;
+        width: 100%;
+       
     }
     .steps .col img{
         width: 100%;
-        height: 70%; 
+         
     }
 
     .why-us .col-left{
-        width: 100%;
-        height: 40%;
+        width: 80%;
+        
     }
 
     .why-us .col-right{
         width: 100%;
-        height: 60%;
+       
     }
 
-
+    .why-us{
+        background-color: black;
+        margin-bottom: 0;
+        
+    }
+    .steps {
+        margin: 0rem ;
+        padding: 0rem ;
+    
+    }
 }
